@@ -13,8 +13,6 @@ def solution(id_list, report, k):
 
     for id in id_list:          # muzi : {neo, frodo}  2번 신고함
         result = 0
-        print(user)
-        print(user[id])
         for u in user[id]:      # neo           # frodo
             print(u)
             if cnt[u] >= k:     # cnt[neo] = 2  # 2
@@ -27,6 +25,10 @@ def solution(id_list, report, k):
 print(solution(["muzi"], ["muzi frodo"], 2))
 print(solution(["muzi", "frodo", "apeach", "neo"], ["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"], 2))
 
+
+# -> [0]
+#   [2, 1, 1, 2]
+#   무, 프, 어,     
 
 
 

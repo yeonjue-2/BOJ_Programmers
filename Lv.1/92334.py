@@ -25,8 +25,8 @@ print(solution(["muzi", "frodo", "apeach", "neo"], ["muzi frodo","apeach frodo",
 
 
 # -> [0]
-#    [2, 1, 1, 2]
-#    무, 프, 어,      
+#    [2, 1, 1, 0]
+#    무, 프, 어,    
 
 
 

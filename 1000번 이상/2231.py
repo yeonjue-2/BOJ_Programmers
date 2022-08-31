@@ -21,16 +21,23 @@ else:
     print(0)
     
     
-    
-N = int(input())
-result = 0
 
-for i in range(1, N+1):
-    M = list(map(int, str(i)))
-    result = i + sum(M)
-    if result == N:
-        print(i)
-        break
+#
+N = input()
+a = int(N)-9*len(N)   # 88 - 18 = 70
+if a < 0:
+    a = 0
 
-    if i == N:
-        print(0)
+N = int(N)
+b = False
+
+while not b and a < N:
+    s = a
+    for i in range(len(str(a))):    # 0, 1
+        s += int(str(a)[i])         # 70+7+0 = 77, 71+7+1 = 79, ... 80+8 = 88
+    if N == s:
+        print(a)
+        b = True
+    a += 1                          # a = 71       72       73  ... 80
+if b == False:
+    print(0)
